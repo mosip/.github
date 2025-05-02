@@ -177,4 +177,6 @@ An optional module used to generate reports from anonymous profiles, with built-
 To explore MOSIP’s source code, fork the relevant repositories and refer to the [MOSIP Documentation](https://docs.mosip.io) for setup guides. For contribution guidelines, see the [Contributor Guide](https://docs.mosip.io/1.2.0/community/code-contributions).
 
 ## License
-All MOSIP modules are licensed under the [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/).
+All core MOSIP modules are licensed under the [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/).
+All reference MOSIP modules are licensed under the [MIT License](https://mit-license.org/).
+Please look at the individual repostories for the correct license.
