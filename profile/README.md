@@ -1,3 +1,9 @@
+# Getting Started
+To explore MOSIP’s source code, fork the relevant repositories and refer to the [MOSIP Documentation](https://docs.mosip.io) for setup guides. For contribution guidelines, see the [Contributor Guide](https://docs.mosip.io/1.2.0/community/code-contributions).
+
+# Community
+Reach out to [MOSIP Community](https://community.mosip.io) for any questions or queries.
+
 # MOSIP Modules Overview
 
 The **Modular Open Source Identity Platform (MOSIP)** is an open-source, modular platform designed to help governments and organizations build secure, scalable, and customizable digital identity systems. Below is an overview of MOSIP’s key modules, their purposes, functionalities, key features, and links to their respective GitHub repositories. All modules are licensed under the Mozilla Public License 2.0 and hosted on GitHub.
@@ -172,9 +178,6 @@ An optional module used to generate reports from anonymous profiles, with built-
 - **Scalability**: Designed for populations of millions, with cloud-native and on-premise deployment options.
 - **Configuration**: Module configurations are stored in the [mosip/mosip-config](https://github.com/mosip/mosip-config) repository.
 - **Infrastructure**: Deployment scripts and Kubernetes configurations are available in [mosip/mosip-infra](https://github.com/mosip/mosip-infra).
-
-## Getting Started
-To explore MOSIP’s source code, fork the relevant repositories and refer to the [MOSIP Documentation](https://docs.mosip.io) for setup guides. For contribution guidelines, see the [Contributor Guide](https://docs.mosip.io/1.2.0/community/code-contributions).
 
 ## License
 All core MOSIP modules are licensed under the [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/).
