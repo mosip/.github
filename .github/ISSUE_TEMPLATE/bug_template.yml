@@ -1,0 +1,30 @@
+name: Bug Report
+description: Report a bug with required details
+title: "title"
+labels: ["bug"]
+
+body:
+
+  - type: input
+    id: summary
+    attributes:
+      label: Short Summary of the Bug
+      placeholder: Brief description of the issue
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide detailed description of the issue
+      placeholder: Explain what happened, expected vs actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Attachments / Evidence / Links
+      description: Add logs, URLs, references, or any supporting evidence
+      placeholder: Logs, links, dashboards, etc.
