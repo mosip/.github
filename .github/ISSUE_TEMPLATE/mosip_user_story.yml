@@ -1,0 +1,105 @@
+name: User Story
+description: Create a detailed issue with business + technical fields
+title: "User Story Title "
+
+body:
+
+  - type: input
+    id: title
+    attributes:
+      label: Description
+      placeholder: Short description of the Story
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      description: Why is this needed?
+    validations:
+      required: true
+
+  - type: textarea
+    id: prerequisites
+    attributes:
+      label: Pre-requisites
+      description: Any setup or dependencies required
+    validations:
+      required: true
+      
+  - type: textarea
+    id: basic_flow
+    attributes:
+      label: Basic Flow
+      description: Describe the normal flow
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternate_flows
+    attributes:
+      label: Alternate Flows
+
+  - type: textarea
+    id: scenarios
+    attributes:
+      label: Scenarios
+      description: List all possible scenarios
+
+  - type: textarea
+    id: data_fields
+    attributes:
+      label: Data Fields
+      description: Fields involved in this feature
+
+  - type: textarea
+    id: business_rules
+    attributes:
+      label: Business Rules (With Audit)
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define when this is considered done
+    validations:
+      required: true
+
+  - type: textarea
+    id: exceptions
+    attributes:
+      label: Exceptions
+      description: Error cases / edge cases
+
+  - type: textarea
+    id: documentation
+    attributes:
+      label: Documentation
+      description: Links or references
+
+  - type: textarea
+    id: reference_ux
+    attributes:
+      label: Reference UX
+      description: Screenshots / Figma / UI references
+
+  - type: input
+    id: compatibility
+    attributes:
+      label: Compatibility
+      placeholder: Browser / OS / API compatibility
+
+  - type: textarea
+    id: implementation_details
+    attributes:
+      label: Implementation Details
+      description: Technical details / approach
+    validations:
+      required: true
+
+  - type: textarea
+    id: non_functional
+    attributes:
+      label: Non-Functional Requirements
+      description: Performance / security / scalability
