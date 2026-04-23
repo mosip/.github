@@ -182,4 +182,7 @@ An optional module used to generate reports from anonymous profiles, with built-
 ## License
 All core MOSIP modules are licensed under the [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/).
 All reference MOSIP modules are licensed under the [MIT License](https://mit-license.org/).
-Please look at the individual repostories for the correct license.
+Please look at the individual repositories for the correct license.
+
+## Ownership
+The primary owners of all the repos are between [Sasikumar Ganesan](https://github.com/gsasikumar/) and [Ramesh Narayanan](https://github.com/ramesh-n) 
