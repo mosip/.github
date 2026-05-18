@@ -185,4 +185,4 @@ All reference MOSIP modules are licensed under the [MIT License](https://mit-lic
 Please look at the individual repositories for the correct license.
 
 ## Ownership
-The primary owners of all the repos are between [Sasikumar Ganesan](https://github.com/gsasikumar/) and [Ramesh Narayanan](https://github.com/ramesh-n) 
+All MOSIP code is owned and maintained by International Institute of Information Technology, Bangalore, on behalf of MOSIP, under the leadership of  [Sasikumar Ganesan](https://github.com/gsasikumar/) and [Ramesh Narayanan](https://github.com/ramesh-n).
