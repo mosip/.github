@@ -13,4 +13,4 @@ jobs:
   call-linker:
     uses: mosip/kattu/.github/workflows/link-pr-to-issue.yml@develop
     secrets:
-      CROSS_REPO_TOKEN: ${{ secrets.ACTION_PAT }}
+      ACTION_PAT: ${{ secrets.ACTION_PAT }}
