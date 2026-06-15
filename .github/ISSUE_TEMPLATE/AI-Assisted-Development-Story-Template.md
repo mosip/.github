@@ -1,5 +1,5 @@
 ---
-name: Feature / Requirement
+name: AI-Assisted-Development-Story Template
 about: Template for describing a new feature, enhancement, or requirement
 title: ''
 labels: ''
