@@ -18,7 +18,7 @@ Dependencies, configurations, feature flags, partner policies, prior implementat
 ## 2. Goals (Mandatory)
 Describe what the implementation must accomplish to successfully address the problem statement.
 
-## 3. Out of Scope (OOS) (Mandatory)
+## 3. Out of Scope (Mandatory)
 Describe the functionality or enhancements that are intentionally not part of this issue.
 
 ## 4. Acceptance Criteria (Mandatory)
