@@ -1,6 +1,6 @@
 name: Bug Report
 description: Report a bug with required details
-title: "title"
+title: "[BUG] "
 labels: ["bug"]
 
 body:
@@ -8,7 +8,7 @@ body:
   - type: input
     id: summary
     attributes:
-      label: Short Summary of the Bug
+      label: Short Summary
       placeholder: Brief description of the issue
     validations:
       required: true
@@ -23,8 +23,193 @@ body:
       required: true
 
   - type: textarea
+    id: repro_steps
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How severe is this bug?
+      options:
+        - Critical
+        - Major
+        - Minor
+        - Normal
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Business priority for scheduling (distinct from Severity)
+      options:
+        - Highest
+        - High
+        - Medium
+        - Low
+        - Lowest
+    validations:
+      required: false
+
+  - type: dropdown
+    id: story_point
+    attributes:
+      label: Story Point
+      description: Estimated effort to fix (optional, filled in during triage)
+      options:
+        - "1"
+        - "2"
+        - "3"
+        - "4"
+        - "5"
+        - "6"
+        - "7"
+        - "8"
+        - "9"
+        - "10"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Complexity
+      description: How complex is this bug to fix? (optional, filled in during triage)
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: false
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: Browser this was observed in, if applicable
+      options:
+        - Chrome
+        - Firefox
+        - Edge
+        - Safari
+        - Other
+        - N/A
+    validations:
+      required: false
+
+  - type: input
+    id: server_os
+    attributes:
+      label: Server OS
+      placeholder: "e.g. RHEL 7, CentOS 7"
+    validations:
+      required: false
+
+  - type: input
+    id: client_os
+    attributes:
+      label: Client OS
+      placeholder: "e.g. Windows 10, Ubuntu 18.04 LTS"
+    validations:
+      required: false
+
+  - type: input
+    id: build
+    attributes:
+      label: Build / Version
+      placeholder: Build number or release tag being used
+    validations:
+      required: false
+
+  - type: input
+    id: start_date
+    attributes:
+      label: Start Date
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: false
+
+  - type: input
+    id: end_date
+    attributes:
+      label: End Date
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: false
+
+  - type: input
+    id: original_estimate
+    attributes:
+      label: Original Estimate (hrs)
+      placeholder: "e.g. 8"
+    validations:
+      required: false
+
+  - type: input
+    id: time_tracking
+    attributes:
+      label: Time Tracking (hrs)
+      description: Actual hours logged, updated as work progresses
+      placeholder: "e.g. 5.5"
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem
+    validations:
+      required: false
+
+  - type: textarea
     id: evidence
     attributes:
-      label: Attachments / Evidence / Links
+      label: Attachments / Evidence / Logs
       description: Add logs, URLs, references, or any supporting evidence
       placeholder: Logs, links, dashboards, etc.
+    validations:
+      required: false
+
+  - type: textarea
+    id: root_cause
+    attributes:
+      label: Root Cause
+      description: To be filled in by the triager once the bug has been investigated
+    validations:
+      required: false
+
+  - type: input
+    id: resolved_by
+    attributes:
+      label: Resolved By
+      description: To be filled in by whoever resolves this issue
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here
+    validations:
+      required: false
