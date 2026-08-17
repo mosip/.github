@@ -1,0 +1,232 @@
+name: AI-Assisted-Development-Story Template
+description: Template for describing a new feature, enhancement, or requirement
+labels: []
+assignees: []
+
+body:
+
+  - type: textarea
+    id: problem_statement
+    attributes:
+      label: 1. Problem Statement
+      description: Describe the business problem, user problem, or technical problem being solved.
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      description: Why is this change needed?
+    validations:
+      required: true
+
+  - type: textarea
+    id: pre_requisites
+    attributes:
+      label: Pre-Requisites
+      description: Dependencies, configurations, feature flags, partner policies, prior implementations.
+    validations:
+      required: false
+
+  - type: textarea
+    id: goals
+    attributes:
+      label: 2. Goals
+      description: Describe what the implementation must accomplish to successfully address the problem statement.
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: 3. Out of Scope
+      description: Describe the functionality or enhancements that are intentionally not part of this issue.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: 4. Acceptance Criteria
+      description: |
+        Write each acceptance criterion using the Given-When-Then format, where:
+        - Given describes the initial state or precondition.
+        - When describes the action or event.
+        - Then describes the expected outcome or system behavior.
+      placeholder: |
+        Example: Given a registered and active user, When valid login credentials are submitted, Then the user shall be authenticated and granted access to the application.
+    validations:
+      required: true
+
+  - type: textarea
+    id: business_rules
+    attributes:
+      label: Business Rules
+      description: Describe the rules, constraints, and conditions that must always be enforced, written in Given-When-Then format.
+    validations:
+      required: false
+
+  - type: textarea
+    id: exceptions_error_handling
+    attributes:
+      label: Exceptions & Error Handling
+      description: Describe expected behavior for validation failures, business rule violations, system failures, error conditions, and edge cases, written in Given-When-Then format.
+    validations:
+      required: false
+
+  - type: textarea
+    id: basic_flow
+    attributes:
+      label: Basic Flow
+      description: Describe the primary step-by-step workflow or sequence of interactions required to achieve the expected outcome.
+    validations:
+      required: false
+
+  - type: textarea
+    id: scenarios
+    attributes:
+      label: Scenarios
+      description: Describe the business scenarios and use cases that must be supported by the implementation.
+    validations:
+      required: false
+
+  - type: textarea
+    id: data_fields
+    attributes:
+      label: Data Fields
+      description: List the fields involved, their type, length, and validation rules.
+      placeholder: |
+        | Field Name | Data Type (String/Text/Number/Boolean/Date/DateTime/Enum/List) | Data Length | Mandatory/Optional | Field Validations | Error Messages |
+        |---|---|---|---|---|---|
+        | Login with e-Signet | Button | - | - | Always enabled | - |
+    validations:
+      required: false
+
+  - type: textarea
+    id: non_functional_requirements
+    attributes:
+      label: Non-Functional Requirements
+      description: Describe any backward compatibility, browser compatibility, API compatibility, platform compatibility, or integration compatibility requirements that must be maintained.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: definition_of_done
+    attributes:
+      label: Definition of Done
+      options:
+        - label: Code implemented
+        - label: Unit tests added
+        - label: Integration tests added (if applicable)
+        - label: Existing tests passing
+        - label: Documentation updated
+        - label: Acceptance criteria validated
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Business priority for scheduling
+      options:
+        - HIGH
+        - MEDIUM
+        - LOW
+    validations:
+      required: true
+
+  - type: input
+    id: story_point
+    attributes:
+      label: Story Point
+      description: Estimated effort to implement
+      placeholder: "e.g. 5"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Complexity
+      description: How complex is this story to implement?
+      options:
+        - SIMPLE
+        - MEDIUM
+        - COMPLEX
+    validations:
+      required: true
+
+  - type: input
+    id: start_date
+    attributes:
+      label: Start Date
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+
+  - type: input
+    id: end_date
+    attributes:
+      label: End Date
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+
+  - type: input
+    id: original_estimate
+    attributes:
+      label: Original Estimate (hrs)
+      placeholder: "e.g. 8"
+    validations:
+      required: true
+
+  - type: input
+    id: time_tracking
+    attributes:
+      label: Time Tracking (hrs)
+      description: Actual hours logged, updated as work progresses
+      placeholder: "e.g. 5.5"
+    validations:
+      required: true
+
+  - type: input
+    id: resolved_by
+    attributes:
+      label: Resolved By
+      description: To be filled in by whoever resolves this issue
+    validations:
+      required: false
+
+  - type: textarea
+    id: documentation
+    attributes:
+      label: 6. Documentation
+      description: Functional documentation, API specifications, architecture references.
+    validations:
+      required: false
+
+  - type: textarea
+    id: ui_ux_design_link
+    attributes:
+      label: UI/UX Design Link
+      description: Figma, mockups, wireframes, screenshots.
+    validations:
+      required: false
+
+  - type: textarea
+    id: git_discussion_link
+    attributes:
+      label: Git Discussion Link
+      description: Design discussions, RFCs, technical decisions.
+    validations:
+      required: false
+
+  - type: textarea
+    id: related_issues_prs
+    attributes:
+      label: Related Issues / PRs
+      description: Links to related work.
+    validations:
+      required: false
