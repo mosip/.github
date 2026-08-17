@@ -60,22 +60,12 @@ body:
     validations:
       required: false
 
-  - type: dropdown
+  - type: input
     id: story_point
     attributes:
       label: Story Point
       description: Estimated effort to fix (optional, filled in during triage)
-      options:
-        - "1"
-        - "2"
-        - "3"
-        - "4"
-        - "5"
-        - "6"
-        - "7"
-        - "8"
-        - "9"
-        - "10"
+      placeholder: "e.g. 5"
     validations:
       required: false
 
@@ -97,7 +87,7 @@ body:
       label: Affected Version
       placeholder: Build number or release tag where the bug was observed
     validations:
-      required: false
+      required: true
 
   - type: input
     id: fix_version
