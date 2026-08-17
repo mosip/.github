@@ -5,14 +5,6 @@ labels: ["bug"]
 
 body:
 
-  - type: input
-    id: summary
-    attributes:
-      label: Short Summary
-      placeholder: Brief description of the issue
-    validations:
-      required: true
-
   - type: textarea
     id: description
     attributes:
@@ -49,10 +41,10 @@ body:
       label: Severity
       description: How severe is this bug?
       options:
-        - Critical
-        - Major
-        - Minor
-        - Normal
+        - CRITICAL
+        - MAJOR
+        - MINOR
+        - BLOCKER
     validations:
       required: true
 
@@ -62,11 +54,9 @@ body:
       label: Priority
       description: Business priority for scheduling (distinct from Severity)
       options:
-        - Highest
-        - High
-        - Medium
-        - Low
-        - Lowest
+        - HIGH
+        - MEDIUM
+        - LOW
     validations:
       required: false
 
@@ -95,48 +85,26 @@ body:
       label: Complexity
       description: How complex is this bug to fix? (optional, filled in during triage)
       options:
-        - High
-        - Medium
-        - Low
-    validations:
-      required: false
-
-  - type: dropdown
-    id: browser
-    attributes:
-      label: Browser
-      description: Browser this was observed in, if applicable
-      options:
-        - Chrome
-        - Firefox
-        - Edge
-        - Safari
-        - Other
-        - N/A
+        - SIMPLE
+        - MEDIUM
+        - COMPLEX
     validations:
       required: false
 
   - type: input
-    id: server_os
+    id: affected_version
     attributes:
-      label: Server OS
-      placeholder: "e.g. RHEL 7, CentOS 7"
+      label: Affected Version
+      placeholder: Build number or release tag where the bug was observed
     validations:
       required: false
 
   - type: input
-    id: client_os
+    id: fix_version
     attributes:
-      label: Client OS
-      placeholder: "e.g. Windows 10, Ubuntu 18.04 LTS"
-    validations:
-      required: false
-
-  - type: input
-    id: build
-    attributes:
-      label: Build / Version
-      placeholder: Build number or release tag being used
+      label: Fix Version
+      description: To be filled in by the triager/resolver once a fix is targeted
+      placeholder: Build number or release tag where the fix will ship
     validations:
       required: false
 
@@ -174,19 +142,11 @@ body:
       required: false
 
   - type: textarea
-    id: screenshots
-    attributes:
-      label: Screenshots
-      description: If applicable, add screenshots to help explain your problem
-    validations:
-      required: false
-
-  - type: textarea
     id: evidence
     attributes:
-      label: Attachments / Evidence / Logs
-      description: Add logs, URLs, references, or any supporting evidence
-      placeholder: Logs, links, dashboards, etc.
+      label: Attachment / Evidence / Docs / Screenshots
+      description: Add screenshots, logs, URLs, references, or any other supporting evidence
+      placeholder: Screenshots, logs, links, dashboards, etc.
     validations:
       required: false
 
