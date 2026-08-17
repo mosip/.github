@@ -130,34 +130,34 @@ body:
     id: priority
     attributes:
       label: Priority
-      description: Business priority for scheduling (optional, filled in during triage)
+      description: Business priority for scheduling
       options:
         - HIGH
         - MEDIUM
         - LOW
     validations:
-      required: false
+      required: true
 
   - type: input
     id: story_point
     attributes:
       label: Story Point
-      description: Estimated effort to implement (optional, filled in during triage)
+      description: Estimated effort to implement
       placeholder: "e.g. 5"
     validations:
-      required: false
+      required: true
 
   - type: dropdown
     id: complexity
     attributes:
       label: Complexity
-      description: How complex is this story to implement? (optional, filled in during triage)
+      description: How complex is this story to implement?
       options:
         - SIMPLE
         - MEDIUM
         - COMPLEX
     validations:
-      required: false
+      required: true
 
   - type: input
     id: start_date
@@ -165,7 +165,7 @@ body:
       label: Start Date
       placeholder: "YYYY-MM-DD"
     validations:
-      required: false
+      required: true
 
   - type: input
     id: end_date
@@ -173,7 +173,7 @@ body:
       label: End Date
       placeholder: "YYYY-MM-DD"
     validations:
-      required: false
+      required: true
 
   - type: input
     id: original_estimate
@@ -181,7 +181,7 @@ body:
       label: Original Estimate (hrs)
       placeholder: "e.g. 8"
     validations:
-      required: false
+      required: true
 
   - type: input
     id: time_tracking
@@ -190,7 +190,7 @@ body:
       description: Actual hours logged, updated as work progresses
       placeholder: "e.g. 5.5"
     validations:
-      required: false
+      required: true
 
   - type: input
     id: resolved_by

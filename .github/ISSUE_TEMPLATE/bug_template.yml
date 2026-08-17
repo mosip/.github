@@ -60,15 +60,6 @@ body:
     validations:
       required: false
 
-  - type: input
-    id: story_point
-    attributes:
-      label: Story Point
-      description: Estimated effort to fix (optional, filled in during triage)
-      placeholder: "e.g. 5"
-    validations:
-      required: false
-
   - type: dropdown
     id: complexity
     attributes:
