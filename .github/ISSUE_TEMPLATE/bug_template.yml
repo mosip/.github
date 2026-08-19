@@ -1,17 +1,9 @@
 name: Bug Report
 description: Report a bug with required details
-title: "title"
+title: "[BUG] "
 labels: ["bug"]
 
 body:
-
-  - type: input
-    id: summary
-    attributes:
-      label: Short Summary of the Bug
-      placeholder: Brief description of the issue
-    validations:
-      required: true
 
   - type: textarea
     id: description
@@ -23,8 +15,47 @@ body:
       required: true
 
   - type: textarea
+    id: repro_steps
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen
+    validations:
+      required: true
+
+  - type: textarea
     id: evidence
     attributes:
-      label: Attachments / Evidence / Links
-      description: Add logs, URLs, references, or any supporting evidence
-      placeholder: Logs, links, dashboards, etc.
+      label: Attachment / Evidence / Docs / Screenshots
+      description: Add screenshots, logs, URLs, references, or any other supporting evidence
+      placeholder: Screenshots, logs, links, dashboards, etc.
+    validations:
+      required: false
+
+  - type: textarea
+    id: root_cause
+    attributes:
+      label: Root Cause
+      description: To be filled in by the triager once the bug has been investigated
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here
+    validations:
+      required: false
